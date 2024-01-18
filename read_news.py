@@ -25,6 +25,9 @@ def get_news_ratings(stocks, amount, stockAmount, days=5):
         if i == 0:
             # Reject cookies
             try:
+                time.sleep(1)
+                driver.execute_script("window.scrollTo(0, 800)")
+                time.sleep(0.5)
                 driver.find_element(By.XPATH, '//*[@id="consent-page"]/div/div/div/form/div[2]/div[2]/button[2]').click()
             except:
                 print("Cookies couldn't be rejected")
