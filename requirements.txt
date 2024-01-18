@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+yfinance
+beautifulsoup4
+requests
+pysentiment2
+selenium
+pandas-market-calendars
